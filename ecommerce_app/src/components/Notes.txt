@@ -1,0 +1,35 @@
+In Nav.js , in the Logout or SigUp link we can visualize that the 
+condition need to be met.
+If we are signed up , we can use the update, add products and etc.
+the user which is registered in the local storage will enable us to the functionalities. 
+If we enter Logout out button after we have signup we will immedialty go back to the signup 
+section thanks to the modality that offers the useNavigate hook in React.
+'
+
+The Outlet component is very useful in this example because it will allow using the facilities if the 
+user exists. Else, it will remain in the signup section
+
+The Route which has teh PrivateComponent in the App.js helps us blocking and allowing the features to be utilized.
+
+
+/*** Before creating the Login UI we take care of the backend process which enables us to login by going through the 
+elements insinde the array User and then after checking which is appropriate we continue the process.
+In the Login component of React we use the same methodoly used in SignUp.js in order to follow the flow.
+
+
+/*** useEffect: It is very useful because it allows us to be sure that the user wont type in the url once is logged the 
+terms: /login, or /signup. As we know, useEffect gives us credibility and assures us to navigate only on the pages in which we give permission.
+You can try it in the application once you have created a user and you try to signup or log in for the second time.
+If you are logged in and you want to go out of the application , you need to logout so the localStorage clears the data and once again the options of sign up and log in 
+become again available.
+
+
+//** Nav.js
+  // If the auth exists (it means that of the local storage contains the user, show these options and routes, if not show the other two SignUp and Login)
+  
+  ** In the AddProduct section video 19 we are using components inside components in React. So we are deleting the h1 tag with the component of AddProduct.
+  
+
+  *** Use params
+  The useParams hook returns an object of key/value pairs of the dynamic params from the current URL that were matched by the <Route path>. 
+  Child routes inherit all params from their parent routes.
